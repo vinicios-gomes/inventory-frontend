@@ -1,24 +1,37 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
-
-export const Header = styled.header`
+export const HeaderContainer = styled.header`
+  display: flex;
+  flex-direction: row;
   padding: 32px 0;
   background: #28262e;
+
+  button {
+    background: transparent;
+    color: #fff;
+    border: 0;
+    margin: auto 30px;
+  }
 `;
 
 export const HeaderContent = styled.div`
-  max-width: 1120px;
+  width: 100vw;
+
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  > img {
+  img {
     height: 80px;
+    margin-left: 50px;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 
   button {
-    margin-left: auto;
+    margin-left: 50px;
     background: transparent;
     border: 0;
 
@@ -51,7 +64,10 @@ export const Profile = styled.div`
       color: #f4ede8;
     }
     strong {
-      color: #ff9000;
+      a {
+        color: #ff9000;
+        text-decoration: none;
+      }
     }
   }
 `;
