@@ -22,12 +22,7 @@ const Board: React.FC = () => {
           icone={monitorDashboard}
           link="/dashboard"
         />
-        <Card
-          label="Equipamentos"
-          disable
-          icone={stockIcon}
-          link="/equipamentos"
-        />
+        <Card label="Equipamentos" icone={stockIcon} link="/equipamentos" />
         <Card
           label="Colaboradores"
           disable

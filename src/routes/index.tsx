@@ -11,6 +11,7 @@ import Usuarios from '../pages/Usuarios';
 import Profile from '../pages/Profile';
 import Dashboard from '../pages/Dashboard';
 import Cadastro from '../pages/Cadastro';
+import ListEquipamentos from '../pages/ListEquipamentos';
 import Equipamentos from '../pages/Cadastro/Equipamentos';
 
 const Routes: React.FC = () => (
@@ -26,6 +27,7 @@ const Routes: React.FC = () => (
     <Route path="/usuarios" component={Usuarios} isPrivate />
     <Route path="/cadastro" exact component={Cadastro} isPrivate />
     <Route path="/profile" component={Profile} isPrivate />
+    <Route path="/equipamentos" component={ListEquipamentos} isPrivate />
   </Switch>
 );
 

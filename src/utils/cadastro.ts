@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 /* eslint-disable @typescript-eslint/camelcase */
 import api from '../services/api';
-import { useAuth } from '../hooks/auth';
 
 interface CadastroFormData {
   patrimonio: number;
