@@ -14,7 +14,7 @@ import { useToast } from '../../../hooks/toast';
 
 import { Container, Content, Form } from './styles';
 
-interface CadastroFormData {
+export interface CadastroFormData {
   patrimonio: string;
   garantia?: Date;
   serial_number?: string;
