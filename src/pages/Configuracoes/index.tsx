@@ -1,16 +1,22 @@
-import React from 'react';
-import gearIcon from '@iconify/icons-noto-v1/gear';
+import React, { useCallback } from 'react';
+
 import Header from '../../components/Header';
-import Card from '../../components/Cards';
-import { Container, Content } from './styles';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+
+import { Container, Content, Form } from './styles';
 
 const Configuracoes: React.FC = () => {
+  const handleForm = useCallback(() => {}, []);
+
   return (
     <Container>
       <Header />
-
       <Content>
-        <Card icone={gearIcon} label="Cadastro" link="/cadastro" />
+        <Form onSubmit={handleForm}>
+          <Input type="text" name="enderecoapi" />
+          <Button>Atualizar</Button>
+        </Form>
       </Content>
     </Container>
   );

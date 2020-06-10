@@ -22,10 +22,8 @@ const Cadastro: React.FC = () => {
           icone={enterpriseIcon}
           label="Fornecedores"
           link="/cadastro/fornecedores"
-          disable
         />
         <Card
-          disable
           icone={userAddOutlined}
           label="Usuarios"
           link="/cadastro/usuarios"

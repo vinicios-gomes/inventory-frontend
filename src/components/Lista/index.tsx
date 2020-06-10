@@ -1,16 +1,14 @@
 import React from 'react';
-import MaterialTable, { Column } from 'material-table';
 
-// import api from '../../services/api';
 import { CadastroFormData } from '../../pages/Cadastro/Equipamentos';
 
-import { Container } from './styles';
+import { Container, Table } from './styles';
 
 interface ListaDTO {
   data: CadastroFormData[];
 }
 
-const Lista: React.FC<ListaDTO> = ({ data, children }) => {
+const Lista: React.FC<ListaDTO> = ({ data }) => {
   const column = [
     { title: 'Patrimonio', field: 'patrimonio', type: undefined },
     { title: 'ID Item', field: 'id_item', type: undefined },
@@ -30,7 +28,7 @@ const Lista: React.FC<ListaDTO> = ({ data, children }) => {
   ];
   return (
     <Container>
-      <MaterialTable
+      <Table
         title="Equipamentos"
         columns={column}
         data={data}

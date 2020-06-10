@@ -29,7 +29,7 @@ const Board: React.FC = () => {
           icone={userOutlined}
           link="/usuarios"
         />
-        <Card label="Configurações" icone={gearIcon} link="/configuracoes" />
+        <Card label="Utilitarios" icone={gearIcon} link="/utils" />
       </Content>
     </Container>
   );
